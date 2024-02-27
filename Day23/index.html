@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .error{
+            border: 1px solid color red
+        }
+
+        .table {
+        width: 80%;
+        margin: 20px auto;
+        border-collapse: collapse;
+    }
+    </style>
+</head>
+<body>
+
+    <form id="form" onsubmit="return false">
+    <input type="text" id="name" placeholder="Adiniz">
+    <input type="color" id="color-picker">
+    <hr>
+     <button id="btn" onclick="clickHandle(this)">Click</button> 
+     <button id="btn">Click 2</button>
+    <hr>
+    <select id="gender">
+        <option value="sec">Sec</option>
+        <option value="erkek">Erkek</option>
+        <option value="kadin">Kadin</option>
+    </select>
+    <hr>
+
+    <label>
+        <input type="radio" name="stack" value="lamp">
+        Kurallari kabul ediyorum
+    </label>
+    <label>
+        <input type="radio" name="stack" value="wamp">
+        Kurallari kabul etmiyorum
+    </label>
+
+    <hr>
+    <button id="save-btn">Kaydet</button>
+    </form>  
+
+    <script src="./dom.js"></script>
+</body>
+</html>
